@@ -13,7 +13,7 @@ const RecentlyPlayedList = () => {
     <div className='inline-blcok p-2 bg-transparent transparent-parent '>
       <h2 className='font-bold mt-10 mb-4'>最近播放</h2>
       
-      <ul className='@2xl:grid-cols-4 grid-cols-2 grid gap-2 cursor-pointer text-xs @lg:text-base'>
+      <ul className='@[840px]:grid-cols-4 grid-cols-2 grid gap-2 cursor-pointer text-xs @lg:text-base'>
         {initialSongs.map(song=>{
           const title = song.title
           const renderedTitle = title.length > 16?title.substring(0,15) + '...' : title
